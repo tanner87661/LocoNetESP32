@@ -2,34 +2,23 @@
 Arduino LocoNet Library for the ESP32 platform
 
 Installation
-
 Download the ZIP file and install it using the normal Arduino IDE installation procedure
-
 Use in your own sketch
-
 Add an include statement to your sketch: 
- #include <IoTT_LocoNetESP32.h>
+        #include <IoTT_LocoNetESP32.h>
 Define the pin numbers you want to use for transmit and receive:
-
 #define pinRx    22  //pin used to receive LocoNet signals
-
 #define pinTx    23  //pin used to transmit LocoNet signals
 
-
 Define the logic level your interface is using. Set this to true if you are using inverse logic (most interface circuitry does), meaning your pins are high when LocoNet is low and vice versa.
-
 For a possible interface schematics, see here:  https://github.com/tanner87661/IoTT-Video16/blob/master/Schematic_LocoNet-Interface_LocoNet-Interface-Classic_20190323114544.pdf
-
 #define InverseLogic true
-
 Define and initialize the LocoNet library by adding it as variable to your sketch:
 LocoNetESPSerial lnSerial(pinRx, pinTx, InverseLogic); //true is inverted signals
 Make sure you add a processLoop  command to your loop() function:
-
 void loop() {
   lnSerial.processLoop();
 }
-
 Add a callback function to your sketch:
 void onLocoNetMessage(lnReceiveBuffer * newData)
 This function is called from the library every time a LocoNet command is received or a communication error occurs. newData has the following structure:
