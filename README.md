@@ -1,6 +1,8 @@
 # LocoNetESP32
 Arduino LocoNet Library for the ESP32 platform 
 
+Video explaining details about the library: https://youtu.be/lZNPnBSq9Ik
+
 Installation
 Download the ZIP file and install it using the normal Arduino IDE installation procedure
 Use in your own sketch
