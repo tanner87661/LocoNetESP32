@@ -1,6 +1,6 @@
 {
-    "name": "IoTT_ESPLocoNetSerial",
-    "version": "1.0.2",
+    "name": "IoTT_ESPLocoNetSWSerial",
+    "version": "1.0.3",
     "keywords": [
       "serial", "LocoNet", "IoTT", "Digitrax"
     ],
