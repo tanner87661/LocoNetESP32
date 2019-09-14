@@ -5,6 +5,8 @@ Be aware that there are interrupt timing deviations when the radio of the ESP32 
 This library therefore should be used if no Wifi connection is needed.
 For some technical background, see video https://youtu.be/lZNPnBSq9Ik
 
+And for the Wifi safe Hybrid Version see here: https://github.com/tanner87661/LocoNetESP32HB
+
 Installation
 
 Download the ZIP file and install it using the normal Arduino IDE installation procedure
